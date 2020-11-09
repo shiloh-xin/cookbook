@@ -3,4 +3,6 @@ export const SWIPER = '/api/swiper';
 // 热门分类
 export const HOTCAT = '/api/hotcat';
 // 精品好菜
-export const LIST = '/api/list';
+export const GOODCOOK = 'https://api.i-lynn.cn/cookbook';
+// 菜品详情
+export const DETAIL = '/api/detail';

@@ -36,7 +36,10 @@ class Index extends Component {
             <>
                 {/* 逻辑运算符&&的特性，如果前面为假则后面的表达式就不会执行 */}
                 {this.state.flag && (
-                    <Carousel autoplay={true} infinite>
+                    <Carousel
+                        autoplay={true}
+                        infinite
+                        style={{ marginTop: 40 }}>
                         {this.state.data.map((val, index) => (
                             <img
                                 key={index}

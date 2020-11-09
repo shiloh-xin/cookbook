@@ -7,4 +7,8 @@ export const HeaderWarp = styled.div`
     text-align: center;
     font-size: 0.18rem;
     color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
 `;

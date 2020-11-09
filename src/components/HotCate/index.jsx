@@ -4,6 +4,8 @@ import { Grid } from 'antd-mobile';
 import Request from '@/http/request';
 import { HOTCAT } from '@/config/uri';
 
+import { Title } from '../GoodCook/style';
+
 class Index extends Component {
     state = {
         data: [],
@@ -33,16 +35,7 @@ class Index extends Component {
     render() {
         return (
             <>
-                <div
-                    style={{
-                        color: '#AAAAAA',
-                        marginLeft: 15,
-                        marginTop: 10,
-                        marginBottom: 10,
-                        fontSize: 16,
-                    }}>
-                    热门分类
-                </div>
+                <Title>热门分类</Title>
                 <Grid
                     data={this.state.data}
                     square={false}
