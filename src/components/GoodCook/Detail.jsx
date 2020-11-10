@@ -14,6 +14,19 @@ class Detail extends Component {
         data: [],
     };
 
+    async componentDidMount() {
+        try {
+            let ret = await Req.get(DETAIL);
+            if (ret.data.ret === true) {
+                this.setState(() => {
+                    return {
+                        data: ret.data.data,
+                    };
+                });
+            }
+        } catch (error) {}
+    }
+
     render() {
         return (
             <>
@@ -111,19 +124,6 @@ class Detail extends Component {
 
     goBack() {
         this.props.history.go(-1);
-    }
-
-    async componentDidMount() {
-        try {
-            let ret = await Req.get(DETAIL);
-            if (ret.data.ret === true) {
-                this.setState(() => {
-                    return {
-                        data: [ret.data.data],
-                    };
-                });
-            }
-        } catch (error) {}
     }
 }
 

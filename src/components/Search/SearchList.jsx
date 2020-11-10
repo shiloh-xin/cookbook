@@ -8,7 +8,7 @@ import { GOODCOOK } from '@/config/uri';
 // 样式组件
 import { Content } from './style';
 import back from '@/assets/icon/left.png';
-import { SearchBar, NavBar, Icon } from 'antd-mobile';
+import { SearchBar, NavBar } from 'antd-mobile';
 
 class SearchList extends Component {
     state = {

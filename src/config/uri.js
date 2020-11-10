@@ -6,3 +6,5 @@ export const HOTCAT = '/api/hotcat';
 export const GOODCOOK = 'https://api.i-lynn.cn/cookbook';
 // 菜品详情
 export const DETAIL = '/api/detail';
+// 分类列表
+export const CATEGORY = '/api/category';
